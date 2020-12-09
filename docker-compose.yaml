@@ -1,0 +1,17 @@
+version: "2"
+services:
+  web:
+    image: hingashicoder/intra_stream_server
+    volumes:
+     - /sys/fs/cgroup:/sys/fs/cgroup:ro
+     - ./client:/var/www/html/viewer
+    cap_add:
+      - SYS_ADMIN
+    command: /sbin/init
+    ports:
+     - "8080:80"
+     - "1935:1935"
+    environment:
+     - NGINX_HOST=foobar.com
+     - NGINX_PORT=80
+     

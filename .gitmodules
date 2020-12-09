@@ -1,0 +1,3 @@
+[submodule "clientsrc"]
+	path = clientsrc
+	url = https://github.com/k018c1069/moviestream
