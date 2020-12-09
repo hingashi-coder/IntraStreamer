@@ -34,7 +34,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.videoOptions.sources[0])
+    console.log(this.videoOptions.sources)
   }
 }
 </script>
