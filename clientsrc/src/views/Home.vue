@@ -18,8 +18,6 @@ export default {
       videoOptions: {
         autoplay: true,
         controls: true,
-        height: 600,
-        width: 1000,
         sources: [
           {
             src: `http://${document.domain}:8080/${this.$route.params.key}.m3u8`,
