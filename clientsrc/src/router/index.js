@@ -2,12 +2,18 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import notFound from '../views/notFound.vue'
+import movePath from '../views/movePath.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/:key',
+    name: 'movePath',
+    path: '/',
+    component: movePath
+  },
+  {
     name: 'Home',
+    path: '/:key',
     component: Home
   },
   {

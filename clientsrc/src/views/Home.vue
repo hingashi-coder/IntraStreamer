@@ -1,7 +1,11 @@
 <template>
-  <div>
+  <v-app>
+    <v-app-bar dark color="primary">
+      <v-toolbar-title>Live配信</v-toolbar-title>
+    </v-app-bar>
+    <v-spacer />
     <video-player :options="videoOptions"/>
-  </div>
+  </v-app>
 </template>
 
 <script>

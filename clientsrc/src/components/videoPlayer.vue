@@ -46,7 +46,7 @@ export default {
       this.show = false
       switch (this.player.error().code) {
         case 2:
-          this.msg = '配信が開始されていません'
+          this.msg = '配信が開始されていません。時間をおいてから再接続してみてください。'
           console.log(this.msg)
           break
         default:
